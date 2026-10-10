@@ -1,0 +1,49 @@
+# Cho phép tất cả bot crawl
+User-agent: *
+Allow: /
+
+# Chặn các file không cần thiết
+Disallow: /404.html
+Disallow: /*.json$
+Disallow: /admin/
+Disallow: /private/
+
+# Cho phép bot của Google, Bing, các search engine lớn
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Cho phép bot mạng xã hội (để preview link đẹp)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: ZaloBot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# Chặn AI crawler (tùy chọn - bỏ comment nếu không muốn AI dùng content)
+# User-agent: GPTBot
+# Disallow: /
+# User-agent: ChatGPT-User
+# Disallow: /
+# User-agent: CCBot
+# Disallow: /
+
+# Sitemap location
+Sitemap: https://kome.top/sitemap.xml
